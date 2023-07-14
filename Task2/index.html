@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9352a5c7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="backgrnd"></div>
+        <div class="header">
+            TO DO LIST
+            <span id="date"></span>
+        </div>
+        <div class="enter-task">
+            <input type="text" id="task" placeholder="Enter new task">
+            <div onclick="addTask()">
+                Add
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="tasks">
+            
+        </div>
+    </div>
+    <div class="comp-icon" onclick="completedtasks()">
+        <span>Completed</span>
+        <i class="fa-sharp fa-solid fa-check-double" style="color: #32a800;"></i>
+    </div>
+    <div class="abort-icon" onclick="abortedtasks()">
+        <i class="fa-solid fa-ban" style="color: #e00000;"></i>
+        <span>Aborted</span>
+    </div>
+    <div class="comp-tasks">
+        <div class="close-comp">
+            Completed Tasks
+            <i class="fa-solid fa-xmark" onclick="closecompletedtasks()"></i>
+        </div>
+        <div class="comp">
+
+        </div>
+    </div>
+    <div class="abort-tasks">
+        <div class="close-comp">
+            Aborted Tasks
+            <i class="fa-solid fa-xmark" onclick="closeabortedtasks()"></i>
+        </div>
+        <div class="abort">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
